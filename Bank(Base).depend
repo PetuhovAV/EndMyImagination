@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1412088099 source:d:\code blocks\bank(base)\src\package.cpp
+	"..\include\Package.h"
+
+1412089634 d:\code blocks\bank(base)\include\package.h
+	<iostream>
+	<string.h>
+	"../constantes.h"
+
+1412073360 d:\code blocks\bank(base)\constantes.h
+	"include/byte.h"
+	"include/word.h"
+
+1412089540 source:d:\code blocks\bank(base)\main.cpp
+	<iostream>
+	"include/Package.h"
+	"functions.h"
+
+1412066349 d:\code blocks\bank(base)\functions.h
+	"Constantes.h"
+
+1412071811 d:\code blocks\bank(base)\include\byte.h
+	<string.h>
+
+1412066902 d:\code blocks\bank(base)\include\word.h
+
+1412071833 source:d:\code blocks\bank(base)\src\byte.cpp
+	"../include/byte.h"
+
+1412067120 source:d:\code blocks\bank(base)\src\word.cpp
+	"../include/word.h"
+
+1412070401 source:d:\code blocks\bank(base)\src\cbyte.cpp
+	"../include/cbyte.h"
+
+1412070447 d:\code blocks\bank(base)\include\cbyte.h
+	<string.h>
+
