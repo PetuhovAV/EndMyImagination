@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1412088099 source:d:\code blocks\bank(base)\src\package.cpp
+1412368034 source:d:\code blocks\bank(base)\src\package.cpp
 	"..\include\Package.h"
 
 1412089634 d:\code blocks\bank(base)\include\package.h
@@ -11,7 +11,7 @@
 	"include/byte.h"
 	"include/word.h"
 
-1412089540 source:d:\code blocks\bank(base)\main.cpp
+1412361129 source:d:\code blocks\bank(base)\main.cpp
 	<iostream>
 	"include/Package.h"
 	"functions.h"
@@ -24,7 +24,7 @@
 
 1412066902 d:\code blocks\bank(base)\include\word.h
 
-1412071833 source:d:\code blocks\bank(base)\src\byte.cpp
+1412089782 source:d:\code blocks\bank(base)\src\byte.cpp
 	"../include/byte.h"
 
 1412067120 source:d:\code blocks\bank(base)\src\word.cpp
@@ -35,4 +35,14 @@
 
 1412070447 d:\code blocks\bank(base)\include\cbyte.h
 	<string.h>
+
+1412369204 source:d:\code blocks\bank(base)\src\web.cpp
+	"../include/web.h"
+
+1412369192 d:\code blocks\bank(base)\include\web.h
+	<WinSock2.h>
+	<Windows.h>
+	<string.h>
+	<stdio.h>
+	<iostream>
 

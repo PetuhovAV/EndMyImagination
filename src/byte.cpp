@@ -1,48 +1,48 @@
-#include "../include/byte.h"
+#include "../include/Byte.h"
 
-#define BYTE_SIZE 1
+#define Byte_SIZE 1
 
-byte::byte(){}
-byte::byte(const int &i)
+Byte::Byte(){}
+Byte::Byte(const int &i)
 {
     value=i;
 }
-byte::byte(const byte &i)
+Byte::Byte(const Byte &i)
 {
     value=i.value;
 }
-byte::byte(const byte &b1,const byte &b2)
+Byte::Byte(const Byte &b1,const Byte &b2)
 {
     value=(b1.value<<4)+b2.value;
 }
-byte::byte(const char &i)
+Byte::Byte(const char &i)
 {
     value=i;
 }
-byte::byte(const size_t &i)
+Byte::Byte(const size_t &i)
 {
     value=i;
 }
 //------------------------------------перегрузка операторов
-byte::operator int()
+Byte::operator int()
 {
     return (int)value;
 }
-byte &byte::operator=(const byte &b)
+Byte &Byte::operator=(const Byte &b)
 {
     value=b.value;
     return *this;
 }
-byte *byte::print(const char *str)
+Byte *Byte::print(const char *str)
 {
     strcpy((char *)this,str);
     return this;
 }
-byte byte::getS()
+Byte Byte::getS()
 {
     return (value>>4);
 }
-byte byte::getM()
+Byte Byte::getM()
 {
     return value-((value>>4)<<4);
 }

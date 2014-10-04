@@ -1,21 +1,25 @@
 #include <iostream>
+#include "include/web.h"
 #include "include/Package.h"
 #include "functions.h"
+
+#pragma comment(lib, "ws2_32.lib")
+
 using namespace std;
 int main()
 {
-    cbyte    message         [PACKAGE_SIZE];
+    cByte    message         [PACKAGE_SIZE];
 
-    cbyte   mti             [MTI_SIZE+1]="0101";
-    byte    pan             [PAN_SIZE];
-    byte    exp_date        [EXP_DATE_SIZE];
+    cByte   mti             [MTI_SIZE+1]="0101";
+    Byte    pan             [PAN_SIZE];
+    Byte    exp_date        [EXP_DATE_SIZE];
     word    cvv2;
-    cbyte   price           [PRICE_SIZE+1]="54462";
+    cByte   price           [PRICE_SIZE+1]="54462";
     word    currency;
-    cbyte    date_operation  [DATA_TIME_SIZE+1]="010206";
-    cbyte    time_operation  [DATA_TIME_SIZE+1]="010203";
-    cbyte   card_holder     [CARD_HOLDER_SIZE+1]="Petuchov Alexey Vladimirovich";
-    cbyte   msg             [MSG_SIZE+1]="000";
+    cByte    date_operation  [DATA_TIME_SIZE+1]="010206";
+    cByte    time_operation  [DATA_TIME_SIZE+1]="010203";
+    cByte   card_holder     [CARD_HOLDER_SIZE+1]="Petuchov Alexey Vladimirovich";
+    cByte   msg             [MSG_SIZE+1]="000";
 
     pan->print("123654");                       //костыльно но работает поленился разберать перегрузку типа как mti[MTI_SIZE+1]="0101"
     exp_date->print("☼↕");                      //зполнять так - alt+(циферки)

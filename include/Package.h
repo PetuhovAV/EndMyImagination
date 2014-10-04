@@ -9,40 +9,40 @@ using namespace std;
 class Package
 {
     private:    //data strage
-        cbyte    message         [PACKAGE_SIZE];
+        cByte    message         [PACKAGE_SIZE];
 
-        cbyte   mti             [MTI_SIZE];
-        byte    pan             [PAN_SIZE];
-        byte    exp_date        [EXP_DATE_SIZE];
+        cByte   mti             [MTI_SIZE];
+        Byte    pan             [PAN_SIZE];
+        Byte    exp_date        [EXP_DATE_SIZE];
         word    cvv2;
-        cbyte   price           [PRICE_SIZE];
+        cByte   price           [PRICE_SIZE];
         word    currency;
-        cbyte    date_operation [DATA_TIME_SIZE];
-        cbyte    time_operation [DATA_TIME_SIZE];
-        cbyte   card_holder     [CARD_HOLDER_SIZE];
-        cbyte   msg             [MSG_SIZE];
+        cByte    date_operation [DATA_TIME_SIZE];
+        cByte    time_operation [DATA_TIME_SIZE];
+        cByte   card_holder     [CARD_HOLDER_SIZE];
+        cByte   msg             [MSG_SIZE];
 
-        byte PANRealSize;
-        byte CardHolderRealSize;
+        Byte PANRealSize;
+        Byte CardHolderRealSize;
 
     public:
         Package();
         virtual ~Package();
         void Print();
-        void SetParams(cbyte mti             [MTI_SIZE],
-                       byte panSize,
-                       byte *pan,
-                       byte exp_date         [EXP_DATE_SIZE],
+        void SetParams(cByte mti             [MTI_SIZE],
+                       Byte panSize,
+                       Byte *pan,
+                       Byte exp_date         [EXP_DATE_SIZE],
                        word cvv2,
-                       cbyte price           [PRICE_SIZE],
+                       cByte price           [PRICE_SIZE],
                        word currency,
-                       cbyte date_operation   [DATA_TIME_SIZE],
-                       cbyte time_operation   [DATA_TIME_SIZE],
-                       byte cardHolderSize,
-                       cbyte card_holder     [CARD_HOLDER_SIZE],
-                       cbyte msg             [MSG_SIZE]);
-        byte *inPack();
-        void readMessage(cbyte *message,byte size);
+                       cByte date_operation   [DATA_TIME_SIZE],
+                       cByte time_operation   [DATA_TIME_SIZE],
+                       Byte cardHolderSize,
+                       cByte card_holder     [CARD_HOLDER_SIZE],
+                       cByte msg             [MSG_SIZE]);
+        Byte *inPack();
+        void readMessage(cByte *message,Byte size);
         void readMessage(Package &Pack);
     protected:
     private:
